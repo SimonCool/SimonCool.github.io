@@ -66,7 +66,7 @@
 						</div>
 						
 					</div>
-					
+
 				</div>
 				<div class="tips-box hide">
 					<div class="tips-arrow"></div>
@@ -77,7 +77,7 @@
 						<li>Links</li>
 						
 						
-						<li>About</li>
+						<li>Über</li>
 						
 					</ul>
 				</div>
@@ -94,7 +94,7 @@
 				        
 							<li><a href="/archives">文章</a></li>
 				        
-							<li><a href="/tags/随笔">随笔</a></li>
+							<li><a href="/tags/JS">库</a></li>
 				        
 						</ul>
 					</nav>
@@ -110,15 +110,15 @@
 						</div>
 					</nav>
 				</section>
-				
+
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/sass-css/" style="font-size: 10px;">sass,css</a>
+						<a href="/tags/sass/" style="font-size: 10px;">sass</a>
 					</div>
 				</section>
 				
-				
+
 				
 				<section class="switch-part switch-part3">
 					<div id="js-friends">
@@ -138,7 +138,7 @@
 				
 			</div>
 		</div>
-	</header>				
+	</header>
 </div>
 
     </div>
@@ -166,7 +166,7 @@
 		        
 					<li><a href="/archives">文章</a></li>
 		        
-					<li><a href="/tags/随笔">随笔</a></li>
+					<li><a href="/tags/JS">库</a></li>
 		        
 		        <div class="clearfix"></div>
 				</ul>
@@ -205,7 +205,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/19/sass/">sass</a>
+      <a class="article-title" href="/2016/05/19/sass/">SASS学习纪录</a>
     </h1>
   
 
@@ -214,9 +214,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h2><p><a href="http://www.w3cplus.com/sassguide/" target="_blank" rel="external">SASS入门</a>、<br><a href="http://sass.bootcss.com/docs/sass-reference/" target="_blank" rel="external">SASS中文文档手册</a></p>
+        <h2 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h2><p><a href="http://www.w3cplus.com/sassguide/">SASS入门</a>、<br><a href="http://sass.bootcss.com/docs/sass-reference/">SASS中文文档手册</a></p>
 <hr>
-<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><p> <a href="http://www.sassmeister.com" target="_blank" rel="external">SASS官方在线转换器</a></p>
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><p> <a href="http://www.sassmeister.com">SASS官方在线转换器</a></p>
 <h4 id="种类"><a href="#种类" class="headerlink" title="种类"></a>种类</h4><p>Sass 有两种语法：</p>
 <ul>
 <li><p>第一种被称为 SCSS(Sassy CSS)，是一个 CSS3 语法的扩充版本。SCSS 理解大多数 CSS hacks 以及浏览器专属语法，例如IE 古老的 filter 语法。个人感觉最关键的是能够兼容css原生语法，方便工程引入sass</p>
@@ -226,74 +226,6 @@
 <li>只要使用 sass-convert 命令行工具，就可以将一种语法转换为另一种语法<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 将 Sass 转换为 SCSS</span><br><span class="line">$ sass-convert style.sass style.scss</span><br><span class="line"></span><br><span class="line"># 将 SCSS 转换为 Sass</span><br><span class="line">$ sass-convert style.scss style.sass</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h4 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h4><p>默认情况下，Sass 会对编译过的模板（template）和片段（partials） 进行缓存。 这将明显加快大量 Sass 文件的重新编译速度， 并且在 Sass 模板被切割为多个文件并通过 @import 引入形成一个大文件时效果最好。</p>
-<h4 id="编辑风格："><a href="#编辑风格：" class="headerlink" title="编辑风格："></a>编辑风格：</h4><ul>
-<li>nested：嵌套缩进的css代码，它是默认值。</li>
-<li>expanded：没有缩进的、扩展的css代码。</li>
-<li>compact：简洁格式的css代码。</li>
-<li>compressed：压缩后的css代码。</li>
-</ul>
-<h4 id="监听方式："><a href="#监听方式：" class="headerlink" title="监听方式："></a>监听方式：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// watch a file</span><br><span class="line">sass --watch input.scss:output.css</span><br><span class="line">// watch a directory（less好像原生不带这个功能）</span><br><span class="line">sass --watch app/sass:public/stylesheets</span><br></pre></td></tr></table></figure>
-<h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><p>SASS允许使用变量，所有变量以$开头：</p>
-<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$blue</span> : <span class="number">#1875e7</span>;　</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">　  <span class="attribute">color</span> : <span class="variable">$blue</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>如果变量需要镶嵌在字符串之中，就必须需要写在#{}之中。</p>
-<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$side</span> : left;</span><br><span class="line"><span class="selector-class">.rounded</span> &#123;</span><br><span class="line">　　<span class="attribute">border</span>-#&#123;<span class="variable">$side</span>&#125;-radius: <span class="number">5px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="计算功能"><a href="#计算功能" class="headerlink" title="计算功能"></a>计算功能</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">　　<span class="attribute">margin</span>: (<span class="number">14px</span>/<span class="number">2</span>);</span><br><span class="line">　　<span class="attribute">top</span>: <span class="number">50px</span> + <span class="number">100px</span>;</span><br><span class="line">　　<span class="attribute">right</span>: <span class="variable">$var</span> * <span class="number">10%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="mixin"><a href="#mixin" class="headerlink" title="mixin"></a>mixin</h4><p>Mixin有点像C语言的宏（macro），是可以重用的代码块</p>
-<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">　　@<span class="keyword">mixin</span> left &#123;</span><br><span class="line">　　　　<span class="attribute">float</span>: left;</span><br><span class="line">　　　　<span class="attribute">margin-left</span>: <span class="number">10px</span>;</span><br><span class="line">　　&#125;</span><br></pre></td></tr></table></figure>
-<p>可以指定参数和缺省值</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">　　@mixin left($value: 10px) &#123;</span><br><span class="line">　　　　float: left;</span><br><span class="line">　　　　margin-right: $value;</span><br><span class="line">　　&#125;</span><br></pre></td></tr></table></figure>
-<p>使用的时候，根据需要加入参数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">　　div &#123;</span><br><span class="line">　　　　@include left(20px);</span><br><span class="line">　　&#125;</span><br></pre></td></tr></table></figure></p>
-<h4 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.class1</span> &#123;</span><br><span class="line">　  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#ddd</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.class2</span> &#123;</span><br><span class="line">　  @<span class="keyword">extend</span> .class1;</span><br><span class="line">　  <span class="attribute">font-size</span>:<span class="number">120%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>继承和mixin的差别：一个重用class类一个重用样式片段</p>
-</blockquote>
-<h4 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">if</span> lightness(<span class="variable">$color</span>) &gt; 30% &#123;</span><br><span class="line">　　<span class="attribute">background-color</span>: <span class="number">#000</span>;</span><br><span class="line">&#125; @<span class="keyword">else</span> &#123;</span><br><span class="line">　　<span class="attribute">background-color</span>: <span class="number">#fff</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h4><blockquote>
-<p>这在一些复杂的aniamte动画中非常好用，比如需要在不同节点通过计算变幻不同的形态。</p>
-</blockquote>
-<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//for循环</span></span><br><span class="line">@<span class="keyword">for</span> <span class="variable">$i</span> from 1 to 10 &#123;<span class="comment">//不包含10</span></span><br><span class="line">　<span class="selector-class">.border-</span>#&#123;<span class="variable">$i</span>&#125; &#123;</span><br><span class="line">　　    <span class="attribute">border</span>: #&#123;<span class="variable">$i</span>&#125;px solid blue;</span><br><span class="line">　&#125;</span><br><span class="line">&#125;</span><br><span class="line">@<span class="keyword">for</span> <span class="variable">$i</span> from 1 through 10 &#123;<span class="comment">//包含10</span></span><br><span class="line">　<span class="selector-class">.border-</span>#&#123;<span class="variable">$i</span>&#125; &#123;</span><br><span class="line">　　    <span class="attribute">border</span>: #&#123;<span class="variable">$i</span>&#125;px solid blue;</span><br><span class="line">　&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//while循环</span></span><br><span class="line"><span class="variable">$i</span>: <span class="number">6</span>;</span><br><span class="line">@<span class="keyword">while</span> <span class="variable">$i</span> &gt; 0 &#123;</span><br><span class="line">　<span class="selector-class">.item-</span>#&#123;<span class="variable">$i</span>&#125; &#123; <span class="attribute">width</span>: <span class="number">2em</span> * <span class="variable">$i</span>; &#125;</span><br><span class="line">　 <span class="variable">$i</span>: <span class="variable">$i</span> - <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//each命令　　</span></span><br><span class="line">@<span class="keyword">each</span> <span class="variable">$member</span> in a, b, c, d &#123;</span><br><span class="line">　.#&#123;<span class="variable">$member</span>&#125; &#123;</span><br><span class="line">　　　<span class="attribute">background-image</span>: url(<span class="string">"/image/#&#123;$member&#125;.jpg"</span>);</span><br><span class="line">　&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="自定义函数"><a href="#自定义函数" class="headerlink" title="自定义函数"></a>自定义函数</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line">　　@function double(<span class="variable">$n</span>) &#123;</span><br><span class="line">　　　　@return <span class="variable">$n</span> * 2;</span><br><span class="line">　　&#125;</span><br><span class="line">　　<span class="selector-id">#sidebar</span> &#123;</span><br><span class="line">　　　　<span class="attribute">width</span>: double(<span class="number">5px</span>);</span><br><span class="line">　　&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="系统自带函数"><a href="#系统自带函数" class="headerlink" title="系统自带函数"></a>系统自带函数</h4><pre><code>字符串函数（quote、unquote、To-upper-case、To-lower-case等）
-数字函数（ceil、floor、round、abs、min、max。random等）
-列表函数（length、nth、join、append、zip、index、Introspection函数集、map函数集）
-颜色函数（RGB函数集、HSL函数集、Opacity函数集）
-</code></pre><h4 id="规则"><a href="#规则" class="headerlink" title="@ 规则"></a>@ 规则</h4><ul>
-<li>@import：<blockquote>
-<p>Sass 扩展了 CSS 的 @import 规则，让它能够引入 SCSS 和 Sass 文件。 所有引入的 SCSS 和 Sass 文件都会被合并并输出一个单一的 CSS 文件。 另外，被导入的文件中所定义的变量或 mixins 都可以在主文件中使用。</p>
-</blockquote>
-</li>
-</ul>
-<blockquote>
-<p>Sass 会在当前目录下寻找其他 Sass 文件， 如果是 Rack、Rails 或 Merb 环境中则是 Sass 文件目录。 也可以通过 :load_paths 选项或者在命令行中使用 –load-path 选项来指定额外的搜索目录。</p>
-<p>@import 根据文件名引入。 默认情况下，它会寻找 Sass 文件并直接引入， 但是，在少数几种情况下，它会被编译成 CSS 的 @import 规则：</p>
-<p>如果文件的扩展名是 .css。<br>如果文件名以 http:// 开头。<br>如果文件名是 url()。<br>如果 @import 包含了任何媒体查询（media queries）。<br>如果上述情况都没有出现，并且扩展名是 .scss 或 .sass， 该名称的 Sass 或 SCSS 文件就会被引入。 如果没有扩展名， Sass 将试着找出具有 .scss 或 .sass 扩展名的同名文件并将其引入。</p>
-</blockquote>
-<ul>
-<li>@media：使用规则有点像冒泡，写在样式里面，编译后会放在外面，比如：</li>
-</ul>
-<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.sidebar</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">  @<span class="keyword">media</span> screen and (orientation: landscape) &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">500px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//输出</span></span><br><span class="line"><span class="selector-class">.sidebar</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">&#125;</span><br><span class="line">@<span class="keyword">media</span> screen and (orientation: landscape) &#123;</span><br><span class="line">    <span class="selector-class">.sidebar</span> &#123;</span><br><span class="line">      <span class="attribute">width</span>: <span class="number">500px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>@extend：这个上面有提到，继承class时使用</li>
-<li>@at-root：当你选择器嵌套多层之后，想让某个选择器跳出，此时就可以使用 @at-root。来看一个简单的示例：</li>
-</ul>
-<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.a</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line"></span><br><span class="line">  <span class="selector-class">.b</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: orange;</span><br><span class="line"></span><br><span class="line">    <span class="selector-class">.c</span> &#123;</span><br><span class="line">      <span class="attribute">color</span>: yellow;</span><br><span class="line"></span><br><span class="line">      @at-root .d &#123;</span><br><span class="line">        <span class="attribute">color</span>: green;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;  </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//输出以下</span></span><br><span class="line"><span class="selector-class">.a</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.a</span> <span class="selector-class">.b</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: orange;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.a</span> <span class="selector-class">.b</span> <span class="selector-class">.c</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: yellow;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.d</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: green;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>@debug：代码在编译出错时，在命令终端会输出你设置的提示，比如：</li>
-</ul>
-<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">debug</span> 10em + 12em;</span><br><span class="line"></span><br><span class="line"><span class="comment">//输出结果是：Line 1 DE<span class="doctag">BUG:</span> 22em</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>@warn  ：运用于逻辑判断里面报警信息</li>
-<li>@error ：运用于逻辑判断里面报错信息</li>
-</ul>
-<p>综合以上：demo可以看到这些的应用</p>
-<hr>
-<h2 id="鸣谢"><a href="#鸣谢" class="headerlink" title="鸣谢"></a>鸣谢</h2><ul>
-<li><a href="http://www.ruanyifeng.com/blog/2012/06/sass.html" target="_blank" rel="external">SASS用法指南</a></li>
-<li><a href="http://www.imooc.com/learn/436" target="_blank" rel="external">慕课网—sass进阶篇</a></li>
-<li><a href="http://www.tuicool.com/articles/yIfmY3y" target="_blank" rel="external">关于sass那些事，sass用法</a></li>
-</ul>
-
       
     </div>
     
@@ -301,72 +233,15 @@
       
       
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sass-css/">sass,css</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sass/">sass</a></li></ul>
 	</div>
 
       
 
       
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/05/19/hello-world/" class="article-date">
-  	<time datetime="2016-05-19T04:58:21.000Z" itemprop="datePublished">2016-05-19</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/19/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
+        <p class="article-more-link">
+          <a  href="/2016/05/19/sass/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -393,11 +268,12 @@
     		&copy; 2016 Simon Qiu
     	</div>
       	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      		Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
       	</div>
     </div>
   </div>
 </footer>
+
     </div>
     
   <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
@@ -413,7 +289,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: true
+		open_in_new: false
 	}
 </script>
 <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
