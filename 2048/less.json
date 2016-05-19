@@ -1,0 +1,4 @@
+{
+  "input": "./less/",
+  "outport": "./css/"
+}

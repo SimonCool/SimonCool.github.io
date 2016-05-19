@@ -1,0 +1,90 @@
+/*color*/
+.s-bg2 {
+  background-color: #EEE4DA;
+}
+.s-bg4 {
+  background: #ECE0C8;
+}
+.s-bg8 {
+  background: #F2B179;
+}
+.s-bg16 {
+  background: #F59563;
+}
+.s-bg32 {
+  background: #F57C5F;
+}
+/*布局*/
+/*模块*/
+header {
+  margin: 40px auto 0;
+  text-align: center;
+}
+header h1 {
+  font-size: 30px;
+  color: black;
+}
+header .newBtn {
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #8f7a66;
+  color: white;
+}
+header .newBtn:hover {
+  background-color: #9f8b77;
+}
+header h2 {
+  text-align: center;
+  font-size: 20px;
+  color: #B8AF9E;
+}
+header h2 .score {
+  display: inline-block;
+  width: 100px;
+}
+.m-grids {
+  position: relative;
+  width: 480px;
+  height: 480px;
+  max-width: 500px;
+  max-height: 500px;
+  background-color: #B8AF9E;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 0;
+  border-radius: 10px;
+}
+.m-grids .u-grid {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background-color: #CCC0B2;
+  border-radius: 6px;
+  font-size: 40px;
+  font-family: arial;
+  color: white;
+  text-align: center;
+}
+/*元件*/
+.u-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
